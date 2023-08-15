@@ -46,6 +46,28 @@ basic.forever(function () {
             led.plot(2, 2)
             radio.sendNumber(0)
         }
+        if (Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Left)) {
+            basic.clearScreen()
+            basic.showLeds(`
+                # . . . .
+                # . . . .
+                # . . . .
+                # . . . .
+                # . . . .
+                `)
+            radio.sendNumber(9)
+        }
+        if (Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Right)) {
+            basic.clearScreen()
+            basic.showLeds(`
+                . . . . #
+                . . . . #
+                . . . . #
+                . . . . #
+                . . . . #
+                `)
+            radio.sendNumber(10)
+        }
     } else {
         basic.clearScreen()
         basic.showLeds(`
