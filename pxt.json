@@ -1,5 +1,5 @@
 {
-    "name": "mecabot steering part",
+    "name": "mecabot steering part controle 26",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -16,7 +16,7 @@
         "test.ts"
     ],
     "targetVersions": {
-        "target": "6.0.17",
+        "target": "8.0.18",
         "targetId": "microbit"
     },
     "supportedTargets": [

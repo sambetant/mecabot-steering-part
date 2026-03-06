@@ -1,4 +1,4 @@
-radio.setGroup(2)
+radio.setGroup(3)
 basic.forever(function () {
     if (Kitronik_Game_Controller.buttonIsPressed(Kitronik_Game_Controller.ControllerButtonPins.Fire1)) {
         if (input.acceleration(Dimension.Y) < -200 && Math.abs(input.acceleration(Dimension.X)) < 100) {
